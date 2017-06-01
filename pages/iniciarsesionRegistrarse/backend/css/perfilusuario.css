@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.arriba{
+    display:table-cell;
+}
+.card{
+    width: 500px;
+    height: 300px;
+    text-align: left;
+    font-size: 20px;
+}
+.card a{
+  color: black;
+}
+.arriba{
+  width: 80px;
+  text-align: center;
+}
+.boton-editar{
+  text-align: right;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.atras{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.boton {
+text-align: center;
+border: 1px solid #2e518b; 
+padding: 10px; 
+background-color:dimgrey; 
+color: #ffffff; 
+text-decoration: none; 
+text-transform: uppercase; 
+font-family: 'Helvetica', sans-serif; 
+border-radius: 50px; 
+}

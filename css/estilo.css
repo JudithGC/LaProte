@@ -1,0 +1,201 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 90px;
+  
+
+}
+
+/* Menú hamburguesa */
+
+#btn-menu{
+    display:none;
+   
+}
+
+
+/*Nuevas cosas*/
+
+header{
+    width:100%; /* Establecemos que el header abarque el 100% del documento */
+    overflow:hidden; /* Eliminamos errores de float */
+}
+
+header nav {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 10px;
+        max-width:500px;
+        min-height: 100%;
+		text-align:left; /*Centramos el menu y el logotipo*/
+		line-height:50px;
+        background:#024959;
+        padding-top: 800px;
+        
+  
+}
+/*.nav {
+      left:-100%;
+      margin:0;
+      position: fixed;
+    
+}*/
+header .logo{
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    margin-left: 90px;
+    font-size:30px;
+    line-height: 90px;
+    float: left;
+    
+}
+header .wrapper{
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background:#024959;
+    position: fixed;
+    top:0;
+       
+}
+
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+ 
+header nav ul li {
+	display:block;
+    float:none;
+	border-bottom:1px solid rgba(255,255,255, .3);
+}
+header nav ul li a {
+	color:lightblue;
+	padding:20px;
+	display:block;
+	text-decoration:none;
+}
+header nav ul li a:hover {
+	background:#037E8C;
+}
+
+header label{
+    display: initial;
+    float: right;
+    color: white;
+    font-size: 50px;
+    margin-top: 15px;
+    margin-right: 25px;
+     
+}
+.menu{
+    position:fixed;
+    text-align: left;
+    float: left;
+    background-color: steelblue;
+    width: 90%;
+    margin-left: -100%;
+    top: 0px;
+    transition: all 0.5s;
+    display:block;
+    background:#ccc;
+    overflow-y: overlay;
+    max-height: 100vh;
+        
+}
+
+   
+#btn-menu:checked~.menu{
+        margin: 0px;        
+    
+}
+
+header nav a {
+        display:block;
+        color:#fff;
+        line-height:normal;
+        font-size:20px;
+        -webkit-transition:all 500ms ease;
+        -o-transition:all 500ms ease;
+        transition:all 500ms ease;
+    }
+
+#bt-menu, .menu  {
+		display:block;
+		padding:20px;
+		background:#024959;
+		color:#fff;
+		text-decoration:none;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+/* Footer -----*/
+ 
+.footer{
+    padding-top: 70px;
+    padding-bottom: 10px;
+    height: 100px;
+    background-color: #024959;
+    color: white;   
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Menú vertical desplegable-----*/
+
+.menu_head {
+
+    color:lightblue; /* Color de las pestañas principales */
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    margin-left: 19px;
+    background-color:#024959; /* Color de fondo */
+    background-position:center right;
+    background-repeat:no-repeat;
+}
+
+.menu_body {
+display:none;
+}
+.menu_body a{
+display:block;
+
+background-color:black; /* Color de fondo de los enlaces */
+text-decoration:none;
+line-height:15px;
+}
+.menu_body a:hover{
+color: #000000; /* Color de los enlaces al pasar el cursor */
+}
+
+/* Boton menu para cerrar-----*/
+h3 .icon-close{
+   
+    float: right;
+    padding-top: -100px;
+    margin-top: -15px;
+    
+    color: crimson;
+    font-size: 43px !important;
+    
+}
+
+@media all and (max-width: 400px) {
+    .menu{
+    width: 100%;      
+    }
+    .boton{
+    display: block;
+    }
+ 
+}
